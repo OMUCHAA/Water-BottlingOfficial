@@ -1,6 +1,6 @@
 <template>
   <section
-    class="mt-[75px] bg-gradient-to-r from-white/20 via-purple-200/20 to-blue-200/10 backdrop-blur-md text-white text-center px-4 relative overflow-hidden"
+    class="mt-[75px] bg-gradient-to-r from-white/20 via-purple-200/40 to-blue-200/40 backdrop-blur-md text-white text-center px-4 relative overflow-hidden"
   >
     <div class="sm:flex items-center justify-center">
       <div class="max-w-4xl mx-auto">
