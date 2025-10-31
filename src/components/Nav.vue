@@ -5,7 +5,7 @@
     <div
       class="sm:max-w-6xl sm:mx-auto sm:flex sm:justify-between sm:items-center sm:px-6 py-4 text-cyan-700 w-full"
     >
-      <h1 class="text-2xl font-semibold sm:font-bold text-cyan-950 ml-2">Amal Brothers</h1>
+      <h1 class="text-2xl lg:text-3xl font-bold text-cyan-950 ml-2"><span class="text-base">the-</span>Amal<span class="text-base">-Brothers</span></h1>
       <ul class="hidden sm:flex space-x-8">
         <li>
           <router-link to="/" class="hover:text-blue-200 text-cyan-600">Home</router-link>
@@ -49,13 +49,16 @@
             <router-link to="/" class="w-full h-full inline-block">Home</router-link>
           </li>
           <li @click="closeMenu" class="h-9 border border-r-0 border-l-0 border-b-0 w-full border-cyan-900 hover:bg-slate-400 hover:text-white transition">
-            <router-link to="/subsidiaries" class="w-full h-full inline-block">Subsidiaries</router-link>
+            <router-link to="/subsidiaries" class="w-full h-full inline-block">About</router-link>
           </li>
           <li @click="closeMenu" class="h-9 border border-r-0 border-l-0 border-b-0 border-cyan-900 w-full hover:bg-slate-400 hover:text-white transition">
-            <router-link to="/about" class="w-full h-full inline-block">About Us</router-link>
+            <router-link to="/about" class="w-full h-full inline-block">Products</router-link>
           </li>
           <li @click="closeMenu" class="h-9 border border-r-0 border-l-0 border-cyan-900 border-b-0 w-full hover:bg-slate-400 hover:text-white transition">
-            <router-link to="/contacts" class="w-full h-full inline-block">Contacts</router-link>
+            <router-link to="/contacts" class="w-full h-full inline-block">Gallery</router-link>
+          </li>
+          <li @click="closeMenu" class="h-9 border border-r-0 border-l-0 border-cyan-900 border-b-0 w-full hover:bg-slate-400 hover:text-white transition">
+            <router-link to="/contacts" class="w-full h-full inline-block">Contact</router-link>
           </li>
         </ul>
       </div>
