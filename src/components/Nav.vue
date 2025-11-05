@@ -8,26 +8,26 @@
       <h1 class="text-2xl lg:text-3xl font-bold text-cyan-950 ml-2"><span class="text-base">the-</span>Amal<span class="text-base">-Brothers</span></h1>
       <ul class="hidden sm:flex space-x-8">
         <li>
-          <router-link to="/" class="hover:text-blue-200 text-cyan-600">Home</router-link>
+          <router-link to="/" class="hover:text-blue-200 hover:cursor-pointer text-cyan-600">Home</router-link>
         </li>
         <li>
-          <router-link to="/about" class="hover:text-blue-200 text-cyan-600"
+          <router-link to="/about" class="hover:text-blue-200 hover:cursor-pointer text-cyan-600"
             >About</router-link
           >
         </li>
         <li>
-          <router-link to="/products" class="hover:text-blue-200 text-cyan-600"
+          <router-link to="/products" class="hover:text-blue-200 hover:cursor-pointer text-cyan-600"
             >Products</router-link
           >
         </li>
         <li>
-          <router-link to="/gallery" class="hover:text-blue-200 text-cyan-600"
+          <router-link to="/gallery" class="hover:text-blue-200 hover:cursor-pointer text-cyan-600"
             >Gallery</router-link
           >
         </li>
         <li>
-          <router-link to="/contact" class="hover:text-blue-200 text-cyan-600"
-            >Contact</router-link
+          <router-link to="/contacts" class="hover:text-blue-200 hover:cursor-pointer text-cyan-600"
+            >Contacts</router-link
           >
         </li>
       </ul>
@@ -49,16 +49,16 @@
             <router-link to="/" class="w-full h-full inline-block">Home</router-link>
           </li>
           <li @click="closeMenu" class="h-9 border border-r-0 border-l-0 border-b-0 w-full border-cyan-900 hover:bg-slate-400 hover:text-white transition">
-            <router-link to="/subsidiaries" class="w-full h-full inline-block">About</router-link>
+            <router-link to="/about" class="w-full h-full inline-block">About</router-link>
           </li>
           <li @click="closeMenu" class="h-9 border border-r-0 border-l-0 border-b-0 border-cyan-900 w-full hover:bg-slate-400 hover:text-white transition">
-            <router-link to="/about" class="w-full h-full inline-block">Products</router-link>
+            <router-link to="/products" class="w-full h-full inline-block">Products</router-link>
           </li>
           <li @click="closeMenu" class="h-9 border border-r-0 border-l-0 border-cyan-900 border-b-0 w-full hover:bg-slate-400 hover:text-white transition">
-            <router-link to="/contacts" class="w-full h-full inline-block">Gallery</router-link>
+            <router-link to="/gallery" class="w-full h-full inline-block">Gallery</router-link>
           </li>
           <li @click="closeMenu" class="h-9 border border-r-0 border-l-0 border-cyan-900 border-b-0 w-full hover:bg-slate-400 hover:text-white transition">
-            <router-link to="/contacts" class="w-full h-full inline-block">Contact</router-link>
+            <router-link to="/contacts" class="w-full h-full inline-block">Contacts</router-link>
           </li>
         </ul>
       </div>

@@ -1,68 +1,38 @@
-
 <template>
-  <div class="mt-16 bg-gray-50 text-gray-800">
-
-    <!-- Hero Section -->
-
-    <!-- About Preview Section -->
- 
-    <!-- Products Preview Section -->
-   
-    <!-- Gallery Preview Section -->
-    <section class="py-20 px-4 md:px-12 bg-white text-center">
-      <h2 class="text-3xl font-bold text-blue-700 mb-10">Inside Our Plant</h2>
-      <div class="grid md:grid-cols-3 gap-6">
-        <img
-          v-for="n in 6"
-          :key="n"
-          :src="`https://via.placeholder.com/400x250?text=Gallery+${n}`"
-          class="rounded-xl shadow-md hover:scale-105 transition-transform"
-          alt="Gallery image"
-        />
-      </div>
-      <router-link
-        to="/gallery"
-        class="inline-block mt-10 text-blue-700 font-semibold hover:underline"
-      >
-        View Full Gallery →
-      </router-link>
-    </section>
-
-    <!-- Contact CTA -->
-    <section class="bg-blue-700 text-white text-center py-16">
-      <h2 class="text-3xl font-bold mb-4">Order Pure Water Today!</h2>
-      <router-link
-        to="/contact"
-        class="bg-white text-blue-700 px-6 py-3 rounded-full font-semibold hover:bg-blue-100 transition"
-      >
-        Contact Us
-      </router-link>
-    </section>
+  <HeroSection />
+  <AboutSection />
+  <ProductsSection />
+  <GallerySection />
+   <!-- Contact Section -->
+  <div
+    class="mb-10 sm:mb-0 border rounded-lg shadow-lg flex flex-col items-center
+     py-10 px-5 text-cyan-800 shadow-cyan-600 bg-gradient-to-r from-white/20 via-purple-200/40 to-blue-200/40 backdrop-blur-md"
+  >
+    <h2 class="text-3xl font-bold mb-6 text-cyan-800">Contact Us</h2>
+    <p class="mb-6 text-lg">
+      Reach Out to us for any questions, assistance or clarification.
+    </p>
+    <div class="mr-20">
+      <i class="fa-solid fa-envelope text-4xl text-cyan-800"></i>
+      <span class="text-xl">Info@gmail.com</span><br /><br />
+    </div>
+    <div class="mr-20">
+      <i class="fa-solid fa-phone-volume text-4xl text-cyan-800"></i>
+      <span class="text-xl">+254100100101</span><br /><br />
+    </div>
+    <div class="mr-16">
+      <i class="fa-solid fa-location-dot text-4xl text-cyan-800"></i>
+      <span class="text-xl">Lusaka Rd. NAIROBI</span>
+    </div>
   </div>
 </template>
 
 <script setup>
-
-
-const products = [
-  {
-    name: "500ml Bottle",
-    description: "Perfect for daily hydration on the go.",
-    image: "https://via.placeholder.com/400x250?text=500ml+Bottle",
-  },
-  {
-    name: "1L Bottle",
-    description: "Great for home, work, or gym use.",
-    image: "https://via.placeholder.com/400x250?text=1L+Bottle",
-  },
-  {
-    name: "5L Bottle",
-    description: "Ideal for family or office needs.",
-    image: "https://via.placeholder.com/400x250?text=5L+Bottle",
-  },
-];
+import HeroSection from "./HeroSection.vue";
+import AboutSection from "./AboutSection.vue";
+import ProductsSection from "./ProductsSection.vue";
+import GallerySection from "./GallerySection.vue";
 </script>
-
 
 <style scoped>
 nav {
